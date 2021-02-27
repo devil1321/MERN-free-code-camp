@@ -15,7 +15,7 @@ export default class CreateExercise extends Component {
     }
 
     componentDidMount(){
-      axios.get('https://mern-app-fcc.herokuapp.com//users')
+      axios.get('https://mern-app-fcc.herokuapp.com/users')
         .then(res=>{
             if(res.data.length > 0){
                 this.setState({
